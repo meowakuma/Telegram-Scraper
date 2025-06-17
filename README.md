@@ -72,4 +72,4 @@ For any questions, feel free to ask us: https://rb.gy/89tiuj
 16. No coding skills required, noob-friendly!
 
 #### Please ⭐ the repo to support our project
-<a href="https://github.com/ScrapeEmAll/Telegram-Scraper"><img alt="Telegram Scraper" src="https://count.getloli.com/get/@ScrapeEmAll/Telegram-Scraper?theme=3d-num" /></a>
+<a href="https://github.com/ScrapeEmAll/Telegram-Scraper"><img alt="Telegram_Scraper" src="https://count.getloli.com/get/@ScrapeEmAll/Telegram-Scraper?theme=3d-num" /></a>
