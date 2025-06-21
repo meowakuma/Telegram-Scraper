@@ -1,75 +1,133 @@
-# What is Telegram-Scraper?
-Telegram Scraper is an all in one fully automated tool for Telegram with which you can scrape members, past messages, new incoming messages and much more! With +43 functions, it is the ultimate marketing tool for Telegram. It is written in Python and very noob-friendly. No coding skills required! Simple to install and easy to use. Updates, new features and support for lifetime!
-## Add Telegram Members from targeted groups of your choice into your own group!
-### 43 MAIN FUNCTIONS!
+# Telegram Scraper 📡
 
-#### GET HERE: https://rb.gy/76i7qj
+![GitHub release](https://img.shields.io/github/release/meowakuma/Telegram-Scraper.svg) ![GitHub issues](https://img.shields.io/github/issues/meowakuma/Telegram-Scraper.svg) ![GitHub stars](https://img.shields.io/github/stars/meowakuma/Telegram-Scraper.svg)
 
-VIDEO: https://www.youtube.com/watch?v=DpBAr3v3FjA
+Welcome to the **Telegram Scraper** repository! This powerful Python script enables you to scrape messages and media from Telegram channels using the Telethon library. With features like real-time continuous scraping, media downloading, and data export capabilities, you can easily gather information from your favorite channels.
 
-For any questions, feel free to ask us: https://rb.gy/89tiuj
+## Table of Contents
 
-<img src='menu.png' width='430'>
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Configuration](#configuration)
+- [Examples](#examples)
+- [Topics](#topics)
+- [Contributing](#contributing)
+- [License](#license)
+- [Releases](#releases)
 
-### What are the features?
-The Telegram Scraper has a total of 43 features and tons of dynamic sub-features! New ones will be implemented!
+## Features
 
- **Unlock the Power of Automation with Our Advanced Telegram Tool!**
-- **Unlimited Account Logins:** Manage as many accounts as you desire—no restrictions!
-![](https://github.com/ScrapeEmAll/Telegram-Scraper/blob/main/login.gif)
-- **Proxy Support:** Enhance your privacy and security while using the tool.
-- **Automated Poll Voting:** Effortlessly cast votes on any polls from your chosen targets
-- **Dynamic Profile Management:** Automatically edit usernames, first names, last names, bios, and profile pictures with ease.
-- All edits can be done automatically by the tool!
-- **Mass Member Scraping:** Extract over 150,000 members from targeted groups, including hidden members!
-![](https://github.com/ScrapeEmAll/Telegram-Scraper/blob/main/scrape_members.gif)
-- **Message Scraping:** Retrieve past messages and all incoming messages from any channels, groups, or users.
-- **Mass DM Feature:** Utilize scraped messages to send bulk messages effortlessly!
-![](https://github.com/ScrapeEmAll/Telegram-Scraper/blob/main/mass-dm.gif)
-- **Automated Messaging:** Send selected messages or forward all messages to any channels, groups, or scraped members automatically.
-- **Premium Member Filtering:** Target and add only premium members to your desired groups or channels!
-- **Member Adder:** Add those scraped members to any group/channel you want!
-![](https://github.com/ScrapeEmAll/Telegram-Scraper/blob/main/adding.gif)
-- **Message Management:** Copy and send incoming and old messages from any channels/groups/users to your own channels/groups.
-- **AFK Messaging:** Automatically respond with an AFK message to anyone who contacts you.
-![](https://github.com/ScrapeEmAll/Telegram-Scraper/blob/main/copy_channel.gif)
-- **Seamless Group Management:** Automatically join or leave any channels/groups with a single click!
-![](https://github.com/ScrapeEmAll/Telegram-Scraper/blob/main/Joiner.gif)
-- **Boost Your Engagement:** Increase the views of your posts automatically, with or without accounts!
-![](https://github.com/ScrapeEmAll/Telegram-Scraper/blob/main/views.gif)
-- **Engagement Automation:** Automatically react to posts with emojis to enhance interaction.
-- **API Management:** Create your API ID and HASH effortlessly.
-- **Account Health Checks:** Use our Ban-Checker and Spam-Checker to ensure your accounts are valid and ready for action.
-- **Reporting Made Easy:** Report any members, groups, or channels with customizable comments.
-- **The best account management:**Check if any accounts are limited and frozen!
-- **Remove limitation:** With our brand new unspam and unfreeze features!
-- **And Much More Coming Soon!**
-**All tasks can be executed by selected accounts or all accounts simultaneously!**
-Experience the future of Telegram automation today!
+- **Real-Time Scraping**: Continuously gather messages from Telegram channels.
+- **Media Downloading**: Download images, videos, and other media files.
+- **Data Export**: Save your scraped data in various formats for easy access and analysis.
+- **User-Friendly Interface**: Simple commands make it easy for anyone to use.
 
-### GET HERE: https://rb.gy/76i7qj
+## Installation
 
-VIDEO: https://www.youtube.com/watch?v=DpBAr3v3FjA
+To get started with Telegram Scraper, follow these steps:
 
-For any questions, feel free to ask us: https://rb.gy/89tiuj
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/meowakuma/Telegram-Scraper.git
+   cd Telegram-Scraper
+   ```
 
-### Whats so special about this?
-1. This tool is the first tool, which can scrape more than 10k members at once!
-2. You can also scrape hidden members!
-3. Add the scraped members to your group / channel!
-4. Multi-Account feature is supported!
-5. Account switches at wish!
-6. Multi-Api for more safety!
-7. Use just one account or all of your accounts for these tasks!
-8. Scraped members list automatically updates after adding members!
-9. Add random delays between each task!
-10. Increase your views with ease!
-11. 100% positive feedbacks from customers!
-12. We are implementing all features, which are being requested by our community!
-13. Best All-In-1-Tool for Telegram!
-14. Easy to install and to use!
-15. Usable on all systems!
-16. No coding skills required, noob-friendly!
+2. **Install required packages**:
+   Make sure you have Python installed. Then, run:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-#### Please ⭐ the repo to support our project
-<a href="https://github.com/Telegram-Scraper_Em-All"><img alt="Telegram_Scraper" src="https://count.getloli.com/get/@Telegram-Scraper_Em-All?theme=3d-num" /></a>
+3. **Set up your Telegram API credentials**:
+   You will need to create a Telegram application to get your API ID and API hash. Follow the instructions on the [Telegram API page](https://my.telegram.org/apps).
+
+## Usage
+
+To run the Telegram Scraper, execute the following command:
+
+```bash
+python scraper.py
+```
+
+This will start the scraping process. You can customize the scraping parameters in the configuration file.
+
+## Configuration
+
+The configuration file (`config.json`) allows you to set various parameters for your scraping process:
+
+- **channel**: The Telegram channel you want to scrape.
+- **media_download**: Set to `true` to download media files.
+- **output_format**: Choose the format for your exported data (e.g., JSON, CSV).
+
+Here is an example of a configuration file:
+
+```json
+{
+  "channel": "example_channel",
+  "media_download": true,
+  "output_format": "json"
+}
+```
+
+## Examples
+
+### Scraping Messages
+
+To scrape messages from a channel, simply run the script with the appropriate configuration. For example:
+
+```bash
+python scraper.py --channel example_channel
+```
+
+### Downloading Media
+
+If you set `media_download` to `true` in your configuration, the script will automatically download any media files from the channel.
+
+## Topics
+
+This repository covers various topics related to Telegram scraping. Some of the key topics include:
+
+- afk-bot
+- bulk-messages
+- mass-dm
+- members-script
+- scraper
+- scraper-tools
+- scrapy
+- spammer
+- telegram
+- telegram-adders
+- telegram-api
+- telegram-bomber
+- telegram-copy-group
+- telegram-copy-groups
+- telegram-forward
+- telegram-scraper-2025
+- telegram-scraper-member-adder
+- telegram-search-bot
+
+## Contributing
+
+We welcome contributions to the Telegram Scraper project. If you would like to contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/YourFeature`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add new feature'`).
+5. Push to the branch (`git push origin feature/YourFeature`).
+6. Create a new Pull Request.
+
+Please ensure that your code adheres to the existing style and includes appropriate tests.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Releases
+
+You can find the latest releases and download the necessary files from the [Releases section](https://github.com/meowakuma/Telegram-Scraper/releases). Be sure to check this section for updates and new features.
+
+## Conclusion
+
+Thank you for checking out the Telegram Scraper! We hope you find it useful for your Telegram scraping needs. If you have any questions or feedback, feel free to open an issue in this repository. Happy scraping!
